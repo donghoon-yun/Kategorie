@@ -38,7 +38,7 @@
 }
 
 body{
-  background-color: #c9ad89;
+  background-color: #c9ad8967;
 
 }
 header{
@@ -157,7 +157,7 @@ nav{
 .fadeShow{
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 800px;
   margin: auto;
 }
 
@@ -168,7 +168,7 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -231,8 +231,8 @@ nav{
 /* 비주얼 텍스트 공통 */
 .changeimg ul li dl{
   position: absolute;
-  top:200px;
-  left:300px;
+  top:400px;
+  left:350px;
   color: #fb5252;
 }
 
@@ -245,7 +245,8 @@ nav{
 }
 .changeimg ul li dl dd:nth-of-type(1){
   font-size: 20px;
-  color:#580d35;
+  color:#222;
+  font-weight: bold;
 }
 .changeimg ul li dl dd:nth-of-type(2){
   position: absolute;
@@ -264,12 +265,16 @@ nav{
   transform: scale(1.2);
 }
 /*///////////////////////// aboutContent */
+
 .aboutContent{
   width: 1200px;
   height: 500px;
   background-color: #e7e7e7;
   margin: auto;
-
+}
+.h1{
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 .content1{
   background: url(../image/content1.jpg) no-repeat center / cover;
@@ -367,6 +372,7 @@ nav{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
 
 .content1 ul li:nth-child(2){
   width: 20px;
@@ -544,11 +550,13 @@ section{
   margin-top: 30px;
   font-family: 'GangwonEduPowerExtraBoldA';
 }
+
 h1{
   font-family: 'Tenada';
   text-align: center;
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 /* ////////////////////container1 */
 .container1{
@@ -577,13 +585,26 @@ h1{
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  display: flex;
 }
-.front img{
+.front_text{padding: 10px;}
+.front_text span{
+  display: block;
+  color: #802a87;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.front_text p{
+  color: #474747;
+  margin-top: 20px;
+}
+.front_text p:nth-of-type(1
+){
   width: 100%;
-  height: 250px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 1px;
+  border-top: 1px solid #ddd;
 }
 .back{
   width: 100%;
@@ -615,9 +636,7 @@ h1{
 
 /* container2 */
 /* //////////////의료진 소개 */
-#container2{
-  margin-top: 30px;
-}
+
 .container2{
   width: 100%;
   height: 600px;
@@ -652,7 +671,6 @@ h1{
   color: #188092;
   text-shadow: 2px 2px 3px #084b50;
   text-align: center;
- 
 }
 
 .text_box1{
@@ -683,7 +701,6 @@ h1{
   color: #c4994f;
   text-shadow: 1px 1px #000;
   transition: 0.3s;
-  
 }
 .dentist1 a:hover .text_box1{
   left: 0;
@@ -734,7 +751,7 @@ h1{
   margin-top: 70px;
   line-height: 20px;
   font-size: 30px;
-  color: #c4994f;;
+  color: #c4994f;
   text-shadow: 1px 1px #000;
   opacity: 1;
   transition: 0.3s;
@@ -771,23 +788,27 @@ h1{
 .step{
   width: 290px;
   height: 290px;
-  /* border: 1px solid #fff; */
-  /* background-color: #c26b2d; */
-  background-color: #867558;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.8s;
   margin:2px 2px ;
   cursor: pointer;
 }
+.step:nth-child(1){background-color: #FF6666;}
+.step:nth-child(2){background-color: #D2FFD2;}
+.step:nth-child(3){background-color: #CBFF75;}
+.step:nth-child(4){background-color: #FFC3FA;}
+.step:nth-child(6){background-color: #FFFF96;}
+.step:nth-child(5){background-color: lightblue;}
+.step:nth-child(7){background-color: #FFE3EE;}
+.step:nth-child(8){background-color: 	#BEEFFF;}
 .step p{
   position: relative;
   top: 0;
   font-size: 25px;
   transition: 0.3s;
   text-align: center;
-  color: #53380a;
+
 }
 .step div{
   position: absolute;
@@ -795,7 +816,7 @@ h1{
   height: 290px;
   opacity: 0;
   /* border: 1px solid red; */
-  background-color: #00000019;
+  /* background-color: #00000019; */
   transition: 0.3s;
 }
 .step div ul{
@@ -805,22 +826,20 @@ h1{
   text-align: center;
   font-size: 18px;
   line-height: 20px;
-  color: #f2f2f2;
+  color: #1d0101;
+  padding: 10px;
 }
 .step:hover p{
   top: -90px;
-  text-shadow: 0 0 10px #fff;
 }
 .step:hover div{
   opacity: 1;
 }
 .step:hover{
-  transform: scale(1.1);
-  box-shadow: 0 10px 10px #000;
+  transform: scale(1.05);
 }
 /* /////////치료 전 치료 후 */
 /* //////////container4 */
-#container4{margin-top: 30px;}
 .container4{
 width: 1200px;
 height: 400px;
@@ -924,6 +943,7 @@ position: relative;
 
 /* /////////////////진료시간 */
 /* /////////////////container5 */
+#container5{margin-top: 250px;}
 .container5{
   width: 100%;
   height: 500px;
@@ -1133,10 +1153,10 @@ textarea{
   outline: none;
   border:2px dotted #6495ED;
 }
+
+
 /* 지도 .container6 ////////// */
-#container6{
-  margin-top: 30px;
-}
+
 .container6{
   width: 1200px;
   height: 500px;
@@ -1191,7 +1211,7 @@ iframe{
   padding: 15px;
   display: none;
   font-size:15px;
-  background-color: #203049c2;
+  background-color: #c7c7c7;
   margin-left: 1px;
 }
 .txt.active{display: block;}
@@ -1235,8 +1255,6 @@ iframe{
   /* border: 1px solid #000; */
   justify-content: space-between;
 
-}
-.sns li{
 }
 
 .sns li:nth-of-type(1) a::before{
